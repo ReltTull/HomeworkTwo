@@ -60,7 +60,6 @@ public class StudentController {
      * @param student
      */
     @PostMapping
-    @ResponseStatus(HttpStatus.CREATED)
     public void createStudent(@RequestBody Student student) {
         universityRepository.addStudent(student);
     }
